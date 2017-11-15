@@ -8,10 +8,8 @@
 
 <script>
   export default {
-
     created () {
           this.$i18n.locale = navigator.language;
       }
   }
-
 </script>
