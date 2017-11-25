@@ -1,7 +1,7 @@
 <template>
   <body data-spy="scroll" data-target=".navbar-collapse">
          <!-- Preloader - Disabled -->
-         <div v-if="!isOlderBrowser & !isMobileDevice" id="loading">
+         <div v-if="(!isOlderBrowser && !isMobileDevice)" id="loading">
                <div id="loading-center">
                    <div id="loading-center-absolute">
                        <div class="object" id="object_one"></div>
@@ -419,7 +419,7 @@ export default {
 
 
   created () {
-  if( (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1))
+  if((typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1))
   {
     isMobileDevice = true;
   }else{
