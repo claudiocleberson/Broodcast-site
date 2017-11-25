@@ -1,7 +1,7 @@
 <template>
   <body data-spy="scroll" data-target=".navbar-collapse">
          <!-- Preloader - Disabled -->
-         <div v-if="!isOlderBrowser || isMobileDevice()" id="loading">
+         <div v-if="!isOlderBrowser & !isMobileDevice" id="loading">
                <div id="loading-center">
                    <div id="loading-center-absolute">
                        <div class="object" id="object_one"></div>
@@ -412,43 +412,44 @@
 export default {
   data () {
     return {
-      isOlderBrowser : false
+      isOlderBrowser : false,
+      isMobileDevice: false
     }
   },
-  methods: {
-    isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-    }
-  },
+
 
   created () {
+  if( (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1))
+  {
+    isMobileDevice = true;
+  }else{
     var ua = window.navigator.userAgent;
-  var msie = ua.indexOf('MSIE ');
-  if (msie > 0) {
-    // IE 10 or older => return version number
-    console.log("IE 10 or older")
-    this.isOlderBrowser = true;
-    return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
-  }
+    var msie = ua.indexOf('MSIE ');
+    if (msie > 0) {
+      // IE 10 or older => return version number
+      console.log("IE 10 or older")
+      this.isOlderBrowser = true;
+      return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+    }
+    var trident = ua.indexOf('Trident/');
+    if (trident > 0) {
+      // IE 11 => return version number
+      console.log("IE 11")
+      var rv = ua.indexOf('rv:');
+      this.isOlderBrowser = true;
+      return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+    }
 
-  var trident = ua.indexOf('Trident/');
-  if (trident > 0) {
-    // IE 11 => return version number
-    console.log("IE 11")
-    var rv = ua.indexOf('rv:');
-    this.isOlderBrowser = true;
-    return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+    var edge = ua.indexOf('Edge/');
+    if (edge > 0) {
+      // Edge (IE 12+) => return version number
+      console.log("IE 12")
+      this.isOlderBrowser = false;
+      return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+    }
+    // other browser
+    return false;
   }
-
-  var edge = ua.indexOf('Edge/');
-  if (edge > 0) {
-    // Edge (IE 12+) => return version number
-    console.log("IE 12")
-    this.isOlderBrowser = false;
-    return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
-  }
-  // other browser
-  return false;
   },
 }
 </script>
