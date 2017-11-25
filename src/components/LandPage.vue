@@ -1,7 +1,7 @@
 <template>
   <body data-spy="scroll" data-target=".navbar-collapse">
          <!-- Preloader - Disabled -->
-         <div v-if="(!isOlderBrowser && !isMobileDevice)" id="loading">
+         <div v-if="(!isOlderBrowser || !isMobileDevice)" id="loading">
                <div id="loading-center">
                    <div id="loading-center-absolute">
                        <div class="object" id="object_one"></div>
