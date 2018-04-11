@@ -94,6 +94,17 @@
                              <div class="col-md-4">
                                  <div class="features_item sm-m-top-30">
                                      <div class="f_item_icon">
+                                         <i class="icon icon-people-32"></i>
+                                     </div>
+                                     <div class="f_item_text">
+                                         <h3 class="p-l-15" >{{$t('messages.makeFriends')}}</h3>
+                                         <p class="p-l-15">{{$t('messages.makeFriendsMsg')}}</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-md-4">
+                                 <div class="features_item sm-m-top-30">
+                                     <div class="f_item_icon">
                                          <i class="icon icon-chat"></i>
                                      </div>
                                      <div class="f_item_text">
@@ -113,17 +124,7 @@
                                      </div>
                                  </div>
                              </div>
-                             <div class="col-md-4">
-                                 <div class="features_item sm-m-top-30">
-                                     <div class="f_item_icon">
-                                         <i class="icon icon-people-32"></i>
-                                     </div>
-                                     <div class="f_item_text">
-                                         <h3 class="p-l-15" >{{$t('messages.makeFriends')}}</h3>
-                                         <p class="p-l-15">{{$t('messages.makeFriendsMsg')}}</p>
-                                     </div>
-                                 </div>
-                             </div>
+
                          </div>
                      </div><!-- End off row -->
                  </div><!-- End off container -->
@@ -144,6 +145,12 @@
                                          </div>
                                          <div class="swiper-slide">
                                            <img v-bind:src="$t('images.galleryImage3')" alt="">
+                                         </div>
+                                         <div class="swiper-slide">
+                                           <img v-bind:src="$t('images.galleryImage4')" alt="">
+                                         </div>
+                                         <div class="swiper-slide">
+                                           <img v-bind:src="$t('images.galleryImage5')" alt="">
                                          </div>
                                      </div>
                                      <!-- If we need navigation buttons -->
@@ -167,63 +174,7 @@
                                      <h5></h5>
                                  </div>
                              </div>
-
                              <!-- Screen01-->
-                             <div id="chatarea" class="screen01 roomy-50">
-                                 <div class="col-md-6">
-                                     <div class="screen01_img text-center">
-                                         <div class="attr_cloudy text-white"><i class="fa fa-comments m-top-30" style="font-size: 30px"></i></div>
-                                         <div class="attr_deg2 text-white"><i class="fa fa-address-book m-top-30" style="font-size: 30px"></i></div>
-                                         <img v-bind:src="$t('images.chatImage')" alt="" />
-                                         <h1 class="hidden cloudy"></h1>
-                                     </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                     <div class="screen01_content m-top-100">
-                                         <div class="screen01_content_img ">
-                                             <i style="color: rgb(106, 90, 205);  opacity: 0.6; font-size: 70px" class="icon icon-chat" aria-hidden="true"></i>
-                                         </div>
-                                         <h2 class="m-top-40">{{$t('messages.chatFeature')}}</h2>
-                                         <p class="m-top-20">{{$t('messages.chatFeatureMsg')}}</p>
-
-                                         <ul class="hidden list-inline m-top-50">
-                                             <li class="text-center">95%</li>
-                                             <li class="text-center">9 &deg; </li>
-                                             <li class="text-center">Rainy</li>
-                                         </ul>
-                                     </div>
-                                 </div>
-                             </div><!--End off Screen01-->
-
-                             <!-- Screen02-->
-                             <div id="meetuparea" class="screen02 roomy-50 m-top-100">
-                                 <div class="col-md-6 col-md-push-6">
-                                     <div class="screen02_img text-center">
-                                         <div class="attr_sun2 text-white"><i class="fa fa-calendar m-top-30" style="font-size: 30px"></i></div>
-                                         <div class="attr_deg3 text-white"><i class="fa fa-cutlery m-top-30" style="font-size: 30px"></i></div>
-                                         <img v-bind:src="$t('images.meetupImage')" alt="" />
-                                         <h1 class="hidden sunny">Sunny</h1>
-                                     </div>
-                                 </div>
-                                 <div class="col-md-6 col-md-pull-6">
-                                     <div class="screen02_content m-top-100">
-                                         <div class="screen02_content_img ">
-                                             <i style="color: rgb(106, 90, 205);  opacity: 0.6; font-size: 70px" class="icon icon-bear1" aria-hidden="true"></i>
-                                         </div>
-                                         <h2 class="m-top-40">{{$t('messages.meetupFeature')}}</h2>
-                                         <p class="m-top-20">{{$t('messages.meetupFeatureMsg')}}</p>
-
-                                         <ul class=" hidden list-inline m-top-50">
-                                             <li class="text-center">95%</li>
-                                             <li class="text-center">9 &deg; </li>
-                                             <li class="text-center">Rainy</li>
-                                         </ul>
-                                     </div>
-                                 </div>
-                             </div><!--End off Screen02-->
-
-                             <!-- Screen03-->
-
                              <div id="maparea"  class="screen03 roomy-50 m-top-100">
                                  <div class="col-md-6">
                                      <div class="screen03_img text-center">
@@ -247,7 +198,63 @@
                                          </ul>
                                      </div>
                                  </div>
-                             </div><!--End off Screen02-->
+                             </div>
+                             <!--End off Screen01-->
+                             <!-- Screen02-->
+
+                             <div id="meetuparea" class="screen02 roomy-50 m-top-100">
+                                 <div class="col-md-6 col-md-push-6">
+                                     <div class="screen02_img text-center">
+                                         <div class="attr_sun2 text-white"><i class="fa fa-address-book m-top-30" style="font-size: 30px"></i></div>
+                                         <div class="attr_deg3 text-white"><i class="fa fa-comments m-top-30" style="font-size: 30px"></i></div>
+                                         <img v-bind:src="$t('images.chatImage')" alt="" />
+                                         <h1 class="hidden sunny">Sunny</h1>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-6 col-md-pull-6">
+                                     <div class="screen02_content m-top-100">
+                                         <div class="screen02_content_img ">
+                                             <i style="color: rgb(106, 90, 205);  opacity: 0.6; font-size: 70px" class="icon icon-chat" aria-hidden="true"></i>
+                                         </div>
+                                         <h2 class="m-top-40">{{$t('messages.chatFeature')}}</h2>
+                                         <p class="m-top-20">{{$t('messages.chatFeatureMsg')}}</p>
+                                         <ul class=" hidden list-inline m-top-50">
+                                             <li class="text-center">95%</li>
+                                             <li class="text-center">9 &deg; </li>
+                                             <li class="text-center">Rainy</li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                             </div>
+                             <!--End off Screen02-->
+
+                             <!-- Screen03-->
+                             <div id="chatarea" class="screen01 roomy-50">
+                                 <div class="col-md-6">
+                                     <div class="screen01_img text-center">
+                                         <div class="attr_cloudy text-white"><i class="fa fa-cutlery m-top-30" style="font-size: 30px"></i></div>
+                                         <div class="attr_deg2 text-white"><i class="fa fa-calendar m-top-30" style="font-size: 30px"></i></div>
+                                         <img v-bind:src="$t('images.meetupImage')" alt="" />
+                                         <h1 class="hidden cloudy"></h1>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-6">
+                                     <div class="screen01_content m-top-100">
+                                         <div class="screen01_content_img ">
+                                             <i style="color: rgb(106, 90, 205);  opacity: 0.6; font-size: 70px" class="icon icon-bear1" aria-hidden="true"></i>
+                                         </div>
+                                         <h2 class="m-top-40">{{$t('messages.meetupFeature')}}</h2>
+                                         <p class="m-top-20">{{$t('messages.meetupFeatureMsg')}}</p>
+                                         <ul class="hidden list-inline m-top-50">
+                                             <li class="text-center">95%</li>
+                                             <li class="text-center">9 &deg; </li>
+                                             <li class="text-center">Rainy</li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                             </div>
+
+                             <!--End off Screen02-->
                           </div>
                      </div><!--End off row-->
                  </div><!--End off container-->
