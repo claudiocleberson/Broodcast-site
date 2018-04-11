@@ -232,7 +232,7 @@
                              <div id="chatarea" class="screen01 roomy-50">
                                  <div class="col-md-6">
                                      <div class="screen01_img text-center">
-                                         <div class="attr_cloudy text-white"><i class="fa fa-cutlery m-top-30" style="font-size: 30px"></i></div>
+                                         <div class="attr_cloudy text-white"><i class="fa fa-clock-o m-top-30" style="font-size: 30px"></i></div>
                                          <div class="attr_deg2 text-white"><i class="fa fa-calendar m-top-30" style="font-size: 30px"></i></div>
                                          <img v-bind:src="$t('images.meetupImage')" alt="" />
                                          <h1 class="hidden cloudy"></h1>
@@ -241,7 +241,7 @@
                                  <div class="col-md-6">
                                      <div class="screen01_content m-top-100">
                                          <div class="screen01_content_img ">
-                                             <i style="color: rgb(106, 90, 205);  opacity: 0.6; font-size: 70px" class="icon icon-bear1" aria-hidden="true"></i>
+                                             <i style="color: rgb(106, 90, 205);  opacity: 0.6; font-size: 70px" class="icon icon-people-32" aria-hidden="true"></i>
                                          </div>
                                          <h2 class="m-top-40">{{$t('messages.meetupFeature')}}</h2>
                                          <p class="m-top-20">{{$t('messages.meetupFeatureMsg')}}</p>
@@ -325,9 +325,9 @@
                              <div class="col-md-6">
                                  <div class="download_item  roomy-20">
                                      <h2 class="text-white">{{$t('messages.downloadApp')}}</h2>
-                                     <p class="text-white m-top-20">{{$t('messages.downloadAppMsg')}}</p>
+                                     <p class="text-white  m-top-20">{{$t('messages.downloadAppMsg')}}</p>
 
-                                     <div class="download_app  text-center">
+                                     <div class="download_app ">
                                        <a href="" target="_blank" style="background-color: #fc6a42 " class=" btn btn-danger m-top-20"><i class="p-r-15 fa fa-apple"></i>{{$t('messages.download')}}</a>
                                        <a href="" class="btn-primary btn m-top-20" style="background-color: #4466c9 "><i class="p-r-15 fa fa-android"></i>{{$t('messages.download')}}</a>
                                      </div>
