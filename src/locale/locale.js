@@ -78,7 +78,7 @@ export default {
       screenshots: 'Nosso App',
       chatFeature: "Vamos nos manter em contato!",
       chatFeatureMsg: 'Você pode bater papo com amigos ou em grupo. Conversar online agora faz parte do nosso dia-a-dia.',
-      meetupFeature: 'Que acha de nos reunirmos?',
+      meetupFeature: 'O que acha de nos reunirmos?',
       meetupFeatureMsg:'De forma fácil crie eventos e convide amigos para interagirem fora do mundo virtual.',
       mapFeature: 'Encontre Grupos, Eventos e Lugares.',
       mapFeatureMsg: 'A partir de grupos de seu interesse contidos no mapa que pretendemos lhe conectar a novos amigos que posteriormente passem a interagir no mundo real por conta da afinidade e proximidade.',
