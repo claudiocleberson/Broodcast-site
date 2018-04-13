@@ -66,7 +66,7 @@
                                      <div class="attr_rio text-uppercase"><a class="scrollto" href="#chatarea"> <i class="fa fa-comment" style="font-size: 20px; color: gray"></i></a></div>
                                      <div class="attr_sun text-uppercase text-white"><a class="scrollto" href="#chatarea"><i class="fa fa-comments m-top-30" style="font-size: 30px; color: white"></i></a></div>
                                      <div class="attr_lon text-uppercase text-white"><a class="scrollto" href="#meetuparea"><i class="fa fa-calendar m-top-30" style="font-size: 30px; color: white"></i></a></div>
-                                     <img style="max-width:250px" v-bind:src="$t('images.homeImage')" alt="" />
+                                     <img style="max-width:280px" v-bind:src="$t('images.homeImage')" alt="" />
                                  </div>
                              </div>
                          </div>
@@ -180,7 +180,7 @@
                                      <div class="screen03_img text-center">
                                          <div class="attr_rainy2 text-white"><i class="fa fa-globe m-top-30" style="font-size: 30px"></i></div>
                                          <div class="attr_deg4 text-white"><i class="fa fa-users m-top-30" style="font-size: 30px"></i></div>
-                                         <img style="max-width:250px" v-bind:src="$t('images.mapImage')" alt="" />
+                                         <img style="max-width:260px" v-bind:src="$t('images.mapImage')" alt="" />
                                      </div>
                                  </div>
                                  <div class="col-md-6">
@@ -207,7 +207,7 @@
                                      <div class="screen02_img text-center">
                                          <div class="attr_sun2 text-white"><i class="fa fa-address-book m-top-30" style="font-size: 30px"></i></div>
                                          <div class="attr_deg3 text-white"><i class="fa fa-comments m-top-30" style="font-size: 30px"></i></div>
-                                         <img style="max-width:250px" v-bind:src="$t('images.chatImage')" alt="" />
+                                         <img style="max-width:260px" v-bind:src="$t('images.chatImage')" alt="" />
                                          <h1 class="hidden sunny">Sunny</h1>
                                      </div>
                                  </div>
@@ -234,7 +234,7 @@
                                      <div class="screen01_img text-center">
                                          <div class="attr_cloudy text-white"><i class="fa fa-clock-o m-top-30" style="font-size: 30px"></i></div>
                                          <div class="attr_deg2 text-white"><i class="fa fa-calendar m-top-30" style="font-size: 30px"></i></div>
-                                         <img style="max-width:250px" v-bind:src="$t('images.meetupImage')" alt="" />
+                                         <img style="max-width:260px" v-bind:src="$t('images.meetupImage')" alt="" />
                                          <h1 class="hidden cloudy"></h1>
                                      </div>
                                  </div>
@@ -1710,7 +1710,7 @@ Download Section style
 }
 .download_item img.app_right{
     position: relative;
-    bottom:-60px;
+    bottom:-30px;
 }
 .download_app{
     margin-left:-10px;
