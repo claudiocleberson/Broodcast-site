@@ -57,7 +57,7 @@
 
                                  <div class="home_btns m-top-40 m-bottom-20 text-center">
                                      <a href="" target="_blank" style="background-color: #fc6a42 " class=" btn btn-danger m-top-20"><i class="p-r-15 fa fa-apple"></i>{{$t('messages.download')}}</a>
-                                     <a href="" class="btn-primary btn m-top-20" style="background-color: #4466c9 "><i class="p-r-15 fa fa-android"></i>{{$t('messages.download')}}</a>
+                                     <a href="https://play.google.com/store/apps/details?id=com.broodcast.app" class="btn-primary btn m-top-20" style="background-color: #4466c9 "><i class="p-r-15 fa fa-android"></i>{{$t('messages.download')}}</a>
                                  </div>
                              </div>
                              <div class="col-md-6">
